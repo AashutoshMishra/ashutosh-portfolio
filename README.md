@@ -46,7 +46,7 @@ portfolio-site/
 
 ## 🌍 Live Demo
 
-[https://AashutoshMishra.github.io/portfolio-site](https://AashutoshMishra.github.io/portfolio-site) *(Will be active after deployment)*
+[https://AashutoshMishra.github.io/portfolio-site](https://aashutoshmishra.github.io/ashutosh-portfolio/) *(Initial look is in way)*
 
 ## 📄 License
 
@@ -56,8 +56,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 ### ✨ Connect with Me
 
-- [LinkedIn](https://www.linkedin.com/in/ashutoshmishra27)
+- [LinkedIn](https://www.linkedin.com/in/ashutosh-mishra-3b3b39111/)
 - [GitHub](https://github.com/AashutoshMishra)
-- [Email](mailto:your.email@example.com)
+- [Email](mailto:maashutoshkr30@gmail.com)
 
 ---

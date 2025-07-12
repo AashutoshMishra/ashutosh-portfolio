@@ -1,178 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Professional Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Favicon (optional, but good for professionalism) -->
-    <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashutosh Mishra - Portfolio</title>
+  <meta name="description" content="Portfolio of Ashutosh Mishra, Full-Stack Developer. Explore my projects, experience, and contact info.">
+  <meta name="keywords" content="Ashutosh Mishra, Developer, Portfolio, React, Node.js, Full Stack">
+  <meta name="author" content="Ashutosh Mishra" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header id="header" role="banner">
-        <div class="container">
-            <div class="header-content">
-                <h1>Your Name</h1>
-                <p>Full-Stack Developer | Building Scalable Solutions</p>
-            </div>
-            <nav aria-label="Main Navigation">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+  <!-- Header -->
+  <header id="header" role="banner">
+    <div class="container header-content">
+      <div>
+        <h1>Ashutosh Mishra</h1>
+        <p><span class="typed"></span></p>
+      </div>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in" aria-labelledby="about-heading">
+      <div class="container about-content">
+        <figure>
+          <img src="assets/images/profile.png" alt="Ashutosh Mishra" class="profile-pic" loading="lazy" />
+        </figure>
+        <div class="about-text">
+          <h2 id="about-heading">About Me</h2>
+          <p>
+            I am a results-driven Software Developer with 6+ years of experience in designing, developing, and optimizing scalable applications using .NET Core, C#, SQL Server, and Azure. Proficient in microservices, API development, Quartz job scheduling, Docker, and Kubernetes. Strong expertise in security (JWT), performance optimization, and database management. Adept at collaborating with cross-functional teams, improving system efficiency, and delivering high-quality solutions aligned with business goals. 
+          </p>
+          <a href="assets/pdf/Resume_AshutoshMishra.pdf" class="btn" download>
+            📄 Download Resume
+          </a>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <!-- Main Content Area -->
-    <main>
-        <!-- About Me Section -->
-        <section id="about" class="fade-in" aria-labelledby="about-heading">
-            <div class="container">
-                <h2 id="about-heading">About Me</h2>
-                <div class="about-content">
-                    <figure class="profile-figure">
-                        <img src="images/profile.png" alt="Your Name - Professional Photo" class="profile-pic">
-                        <figcaption class="sr-only">A professional photo of Your Name</figcaption>
-                    </figure>
-                    <div class="about-text">
-                        <p>
-                            I am a passionate full-stack developer with extensive experience in building robust and scalable web applications. My expertise spans across modern front-end frameworks like React and back-end technologies such as Node.js and Python. I thrive in dynamic environments, constantly seeking to learn and apply new technologies to solve complex problems. Currently, I am a Software Engineer at a leading tech company, contributing to innovative projects and driving impactful solutions.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" aria-labelledby="experience-heading">
-            <div class="container">
-                <h2 id="experience-heading">Experience</h2>
-                <div class="experience-list">
-                    <div class="job">
-                        <h3>Senior Software Engineer</h3>
-                        <p><strong>Tech Solutions Inc.</strong> | 2020 - Present</p>
-                        <ul>
-                            <li>Led the development of a new e-commerce platform, resulting in a 30% increase in user engagement.</li>
-                            <li>Mentored junior developers, fostering a collaborative environment and improving team productivity.</li>
-                            <li>Optimized database queries and API responses, reducing load times by 20% and enhancing overall application performance.</li>
-                        </ul>
-                    </div>
-                    <div class="job">
-                        <h3>Software Engineer</h3>
-                        <p><strong>Web Innovators</strong> | 2018 - 2020</p>
-                        <ul>
-                            <li>Developed and maintained high-traffic client websites, ensuring cross-browser compatibility and responsiveness.</li>
-                            <li>Collaborated closely with UX/UI designers to translate wireframes and mockups into pixel-perfect, user-friendly interfaces.</li>
-                            <li>Contributed to both front-end (HTML, CSS, JavaScript) and back-end (Python, Django) development, delivering full-stack solutions.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" aria-labelledby="education-heading">
-            <div class="container">
-                <h2 id="education-heading">Education</h2>
-                <div class="education-list">
-                    <div class="degree">
-                        <h3>Master of Science in Computer Science</h3>
-                        <p><strong>University of Technology</strong> | 2018</p>
-                    </div>
-                    <div class="degree">
-                        <h3>Bachelor of Science in Computer Science</h3>
-                        <p><strong>State University</strong> | 2016</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" aria-labelledby="projects-heading">
-            <div class="container">
-                <h2 id="projects-heading">Projects</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <img src="images/project1.png" alt="Project One Thumbnail">
-                        <h3>Project One: Task Manager App</h3>
-                        <p>A comprehensive web application for managing tasks and projects with real-time updates and user authentication.</p>
-                        <p><strong>Tech Stack:</strong> React, Node.js, Express, MongoDB, Socket.IO</p>
-                        <a href="#" class="btn" target="_blank" rel="noopener noreferrer">GitHub Link <span class="sr-only">for Task Manager App</span></a>
-                    </div>
-                    <div class="project-card">
-                        <img src="images/project2.png" alt="Project Two Thumbnail">
-                        <h3>Project Two: E-commerce Storefront</h3>
-                        <p>An elegant e-commerce website featuring product listings, shopping cart functionality, and secure payment integration.</p>
-                        <p><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript, Stripe API, PHP</p>
-                        <a href="#" class="btn" target="_blank" rel="noopener noreferrer">GitHub Link <span class="sr-only">for E-commerce Storefront</span></a>
-                    </div>
-                    <div class="project-card">
-                        <img src="images/project3.png" alt="Project Three Thumbnail">
-                        <h3>Project Three: Personal Blog Platform</h3>
-                        <p>A custom-built blogging platform with a user-friendly content management system and responsive design.</p>
-                        <p><strong>Tech Stack:</strong> Next.js, GraphQL, PostgreSQL, AWS S3</p>
-                        <a href="#" class="btn" target="_blank" rel="noopener noreferrer">GitHub Link <span class="sr-only">for Personal Blog Platform</span></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" aria-labelledby="contact-heading">
-            <div class="container">
-                <h2 id="contact-heading">Contact</h2>
-                <div class="contact-links">
-                    <a href="mailto:your.email@gmail.com" aria-label="Email me at your.email@gmail.com">
-                        <img src="images/gmail.svg" alt="Gmail icon">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
-                        <img src="images/github.svg" alt="GitHub icon">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Connect with me on LinkedIn">
-                        <img src="images/linkedin.svg" alt="LinkedIn icon">
-                    </a>
-                </div>
-                <form aria-label="Contact Form">
-                    <label for="name" class="sr-only">Name</label>
-                    <input type="text" id="name" placeholder="Your Name" required>
-
-                    <label for="email" class="sr-only">Email</label>
-                    <input type="email" id="email" placeholder="Your Email" required>
-
-                    <label for="message" class="sr-only">Message</label>
-                    <textarea id="message" placeholder="Your Message" required></textarea>
-
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer role="contentinfo">
-        <div class="container">
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <!-- Experience Section -->
+    <section id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <h2 id="experience-heading">Experience</h2>
+        <div class="job">
+          <h3>Senior Application Developer</h3>
+          <p><strong>IBM India Pvt. Ltd.</strong> | Bangalore, Karnataka</p>
+          <p>May 2024 - Present</p>
+          <ul>
+            <li>Developed and optimized backend solutions using .NET Core and Entity Framework, improving system performance.</li>
+            <li>Implemented Quartz job scheduling to automate critical tasks, reducing manual intervention by 90% and enhancing operational efficiency. Integrated core services to streamline data processing, leading to an improvement in response times.</li>
+            <li>Designed and maintained scalable database structures, optimizing queries and reducing execution time by 50% to enhance data retrieval performance. Resolved job scheduling, API integration, and database issues, improving system reliability.</li>
+            <li>Collaborated with cross-functional teams, conducted code reviews, and ensured adherence to best practices in software architecture, resulting in a 25% increase in overall development efficiency.</li>
+          </ul>
         </div>
-    </footer>
+        <div class="job">
+          <h3>Senior Software Developer</h3>
+          <p><strong>HCL Technologies</strong> | Noida, Uttar Pradesh</p>
+          <p>Oct 2021 - May 2024</p>
+          <ul>
+            <li>Architected, designed, and developed scalable applications using .NET Core 6.0+, SQL Server, and Azure Portal, ensuring alignment with business requirements and industry standards.  </li>
+            <li>Led the implementation of a secure authentication framework with JWT token-based security, reducing unauthorized access attempts by 50%.</li>
+            <li>Optimized SQL procedures and queries, improving database performance and reducing query execution times by 80%.</li>
+            <li>Spearheaded strategic code optimizations and refactoring, enhancing application speed by 70%, resulting in improved user experience and operational efficiency.</li>
+          </ul>
+        </div>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" aria-label="Scroll to top">
-        <img src="images/arrow-up.svg" alt="Arrow pointing up">
-    </button>
+        <div class="job">
+          <h3>Software Engineer</h3>
+          <p><strong> Society for Technology and Action for Rural Advancement</strong> | New Delhi, Delhi</p>
+          <p>Feb 2020 - Sep 2021</p>
+          <ul>
+            <li>Managed projects, conducted business analysis, and coordinated vendor interactions to streamline development processes.</li>
+            <li>Led .NET Core migrations and contributed to UI/UX enhancements, ensuring modernized and user-centric applications.</li>
+            <li>Developed mobile-first web solutions while maintaining and enhancing legacy systems for improved functionality.</li>
+            <li>Spearheaded the creation of a dedicated dashboard application, enabling seamless project communication and reducing data analysis workload by 80%.</li>
+          </ul>
+        </div>
 
-    <!-- jQuery Library -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Custom JavaScript -->
-    <script src="js/script.js"></script>
+        <div class="job">
+          <h3>IT Associates</h3>
+          <p><strong>CTDI (Under the payroll of Gold Track Engineers)</strong> | Manesar, Harayana</p>
+          <p>Nov 2018 - Jan 2020</p>
+          <ul>
+            <li>Maintained and enhanced sales, inventory, and raw material procurement applications, ensuring seamless business operations.</li>
+            <li>Designed and developed web-based ERPs, MIS systems, and websites using Microsoft technologies, including MS SQL Server, C#, and ASP.NET.</li>
+            <li>Managed database administration tasks such as backups, indexing, and performance optimization while providing user support to enhance system efficiency and reliability. </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    
+    <!-- Education Section -->
+    <section id="education" aria-labelledby="education-heading">
+      <div class="container">
+        <h2 id="education-heading">Education</h2>
+        <div class="degree">
+          <h3>Master of Computer Application (MCA)</h3>
+          <p><strong>The University of Allahabad</strong>, Prayagraj | 2018</p>
+        </div>
+        <div class="degree">
+          <h3>Bachelor of Science (B.Sc.)</h3>
+          <p><strong>The University of Allahabad</strong>, Prayagraj | 2015</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading">Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="images/project1.png" alt="Task Manager App" loading="lazy">
+            <h3>Task Manager App</h3>
+            <p>A full-featured app to track personal and team tasks with real-time updates.</p>
+            <p><strong>Tech Stack:</strong> React, Node.js, MongoDB</p>
+            <a href="#" class="btn" target="_blank">View on GitHub</a>
+          </div>
+          <div class="project-card">
+            <img src="images/project2.png" alt="E-commerce Site" loading="lazy">
+            <h3>E-commerce Storefront</h3>
+            <p>Custom shopping site with Stripe integration and admin dashboard.</p>
+            <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, PHP</p>
+            <a href="#" class="btn" target="_blank">View on GitHub</a>
+          </div>
+          <div class="project-card">
+            <img src="images/project3.png" alt="Blog Platform" loading="lazy">
+            <h3>Personal Blog Platform</h3>
+            <p>A sleek blog engine with markdown support, commenting, and tags.</p>
+            <p><strong>Tech Stack:</strong> Next.js, PostgreSQL, GraphQL</p>
+            <a href="#" class="btn" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Contact</h2>
+        <div class="contact-links">
+          <a href="mailto:maashutoshkr30@gmail.com" aria-label="Email"><img src="assets/images/gmail.png" alt="Email Icon"></a>
+          <a href="https://github.com/AashutoshMishra" target="_blank" aria-label="GitHub"><img src="assets/images/github.png" alt="GitHub Icon"></a>
+          <a href="https://www.linkedin.com/in/ashutosh-mishra-3b3b39111/" target="_blank" aria-label="LinkedIn"><img src="assets/images/linkedin.png" alt="LinkedIn Icon"></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Ashutosh Mishra. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Button -->
+  <button class="scroll-to-top" aria-label="Scroll to top">
+    <img src="assets/images/top.png" alt="Arrow pointing up">
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
 </html>
